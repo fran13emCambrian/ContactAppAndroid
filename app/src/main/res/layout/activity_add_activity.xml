@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/round_field"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="6dp"
+            android:padding="10dp"
+            android:text="NAME"
+            android:textColor="#FAF1F1"
+            />
+
+        <EditText
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorgreyLight"
+            android:inputType="textPersonName"
+            android:layout_toRightOf="@id/label1" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/round_field"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="6dp"
+            android:padding="10dp"
+            android:text="MOBILE"
+            android:textColor="#FAF1F1"
+            android:layout_below="@+id/label1"  />
+        <EditText
+            android:id="@+id/tv2"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorgreyLight"
+            android:inputType="phone"
+            android:layout_width="0dp"
+            android:layout_weight="4.3"
+            android:layout_below="@+id/tv1"
+            android:layout_toRightOf="@id/label2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/round_field"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="6dp"
+            android:padding="10dp"
+            android:text="EMAIL"
+            android:textColor="#FAF1F1"
+            android:layout_below="@+id/label2"/>
+
+
+
+        <EditText
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorgreyLight"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/tv2"
+            android:layout_toRightOf="@id/label3" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@id/label3"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="SAVE NEW CONTACT"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
